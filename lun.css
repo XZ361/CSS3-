@@ -1,50 +1,40 @@
 html,body{
 	margin: 0;
 	padding: 0;
-	background-color: #bc4143;
+	
 }
-.ferriswheel{
-	 position: relative;/* relative就是元素的坐标系 */ 
-	margin: 0 auto;
-	width: 768px;
-	height: 768px;
-	background-image:url('./img/fsw.png');
-	animation: changeDeg 8s linear infinite;
+#banner{
+	width:100%;
+	height: 500px;
+	background: #3399ff;
 }
-.pic1,.pic2,.pic3{
-	position: absolute;
-	width: 130px;
-	height: 170px;
-	animation: changeDeg2 8s linear infinite;
+.nav{
+	width: 200px;
+	height:100%;
+	margin-left: 75px;
+	background: rgba(0,0,0,.4);
 }
-.pic1{
-	top: 100px;
-	left: 30px;
-	background-image: url('./img/boy.png');
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
-.pic2{
-	top: 650px;
-	left: 330px;
-	background-image: url('./img/girl.png');
+li{
+	width:100%;
+	height:31.25px;
+	line-height: 31.25px;
+	color:#fff;
+	font-size:12px;
 }
-.pic3{
-	top: 100px;
-	left: 580px;
-	background-image: url('./img/shamegirl.png');
+i{
+	color:#8c8c8c;
+	margin:0 4px 0 14px;
 }
-@keyframes changeDeg{
-		from{
-			transform:rotate(0deg);
-		}
-		to{
-			transform: rotate(360deg);
-		}
-	}
-@keyframes changeDeg2{
-	from{
-		transform:rotate(-0deg);
-	}
-	to{
-		transform: rotate(-360deg);
-	}
+li:hover{/*伪类，鼠标悬停时背景色改变*/
+	background:white;
+	color:red;
+}
+li:hover i{
+	color:red;
+
 }
